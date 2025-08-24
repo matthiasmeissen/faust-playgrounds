@@ -26,4 +26,5 @@ mixOsc(f) = rdtable(mixedWave, os.phasor(8, f));
 // With ba.selectn(N,i) you can choose how many inputs you want to have
 selectOscillator(f) = triOsc(f), sawOsc(f), squOsc(f), mixOsc(f) : ba.selectn(4, select);
 
+
 process = selectOscillator(freq) * 0.2;
