@@ -23,5 +23,4 @@ select = checkbox("Use Custom [4]");
 voice1 = phasor, bipolarSaw : select2(select) * hslider("Phasor [5]", 0.4, 0.0, 1.0, 0.01);
 voice2 = os.osc(400) * customPhasor * hslider("Amplitude Modulation [6]", 0.2, 0.0, 1.0, 0.01);
 
-
 process = voice1, voice2;
